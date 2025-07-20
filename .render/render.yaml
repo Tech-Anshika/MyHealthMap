@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: myhealthmap
+    env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "gunicorn app:app"
+    runtime: python3.10
