@@ -5,13 +5,13 @@ import numpy as np
 app = Flask(__name__)
 
 # ✅ Load all models (use raw strings for Windows paths)
-model_sleep = joblib.load(r"C:\Users\anshi\Downloads\model train\model_sleep.pkl")
-model_heart = joblib.load(r"C:\Users\anshi\Downloads\model train\model_heart.pkl")
-model_bmi = joblib.load(r"C:\Users\anshi\Downloads\model train\model_bmi.pkl")
-model_diastolic_bp = joblib.load(r"C:\Users\anshi\Downloads\model train\model_diastolic_bp.pkl")
-model_systolic_bp = joblib.load(r"C:\Users\anshi\Downloads\model train\model_systolic_bp.pkl")
-model_stress = joblib.load(r"C:\Users\anshi\Downloads\model train\model_stress.pkl")
-model_qos = joblib.load(r"C:\Users\anshi\Downloads\model train\model_qos.pkl")
+model_sleep = joblib.load(r"C:\Users\anshi\Downloads\MyHealthMap\model_sleep.pkl")
+model_heart = joblib.load(r"C:\Users\anshi\Downloads\MyHealthMap\model_heart.pkl")
+model_bmi = joblib.load(r"C:\Users\anshi\Downloads\MyHealthMap\model_bmi.pkl")
+model_diastolic_bp = joblib.load(r"C:\Users\anshi\Downloads\MyHealthMap\model_diastolic_bp.pkl")
+model_systolic_bp = joblib.load(r"C:\Users\anshi\Downloads\MyHealthMap\model_systolic_bp.pkl")
+model_stress = joblib.load(r"C:\Users\anshi\Downloads\MyHealthMap\model_stress.pkl")
+model_qos = joblib.load(r"C:\Users\anshi\Downloads\MyHealthMap\model_qos.pkl")
 
 @app.route('/predict-all', methods=['POST'])
 def predict_all():
